@@ -1,0 +1,50 @@
+1. Users
+- id int auto increment
+- group_id int
+- pass varchar(32)
+- token_api varchar(36)
+- isActive bool
+- isAdmin bool
+- createdAt datetime
+- updatedAt datetime
+
+1a. UserData
+- id int auto increment
+- user_id int
+- firstName varchar(30)
+- lastName varchar(30)
+- address text
+- postalCode varchar(10)
+- city varchar 30 
+- phone varchar(20)
+- email text
+- createdAt datetime
+- updatedAt
+
+2. Groups
+- id int auto increment
+- user_id
+- name text
+- address text
+- postalCode varchar(10)
+- city varcar 50 
+- nip varchar (11) 
+- createdAt
+- updatedAt
+
+3. Vacations
+- id int auto increment
+- user_id int
+- dateFrom date
+- dateTo date
+- days int
+- isApproved bool
+- createdAt datetime
+- updatedAt datetime
+
+4. Reasons
+- id int auto increment
+- vacation_id int
+- name
+- createdAt
+- updatedAt
